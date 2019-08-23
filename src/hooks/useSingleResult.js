@@ -13,5 +13,5 @@ export default id => {
     getResult(id);
   }, [id]);
 
-  return [result];
+  return [getResult, result];
 };

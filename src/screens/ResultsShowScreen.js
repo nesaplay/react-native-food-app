@@ -4,11 +4,12 @@ import useSingleResult from '../hooks/useSingleResult';
 
 const ResultsShowScreen = ({ navigation }) => {
   const id = navigation.getParam('id')
-  const [result] = useSingleResult(id)
+  const [getResult, result] = useSingleResult(id)
 
   if (!result) {
     return null;
   }
+  
 
   return (
     <View>
